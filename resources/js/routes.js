@@ -1,0 +1,55 @@
+import Logo from './components/Logo';
+import LogoSymbol from './components/LogoSymbol';
+import Colours from './components/Colours';
+import Typography from './components/Typography';
+import Mascot from './components/Mascot';
+import Illustrations from './components/Illustrations';
+import LoadersAndAnimations from './components/LoadersAndAnimations';
+import Wallpapers from './components/Wallpapers';
+import NotFound from './components/NotFound';
+
+
+export default {
+    mode: 'history',
+
+    linkActiveClass: 'font-bold',
+
+    routes: [
+        {
+            path: '*',
+            component: NotFound
+        },
+        {
+            path: '/',
+            component: Logo
+        },
+        {
+            path: '/logo-symbol',
+            component: LogoSymbol,
+        },
+        {
+            path: '/colours',
+            component: Colours,
+        },
+        {
+            path: '/typography',
+            component: Typography,
+        },
+        {
+            path: '/mascot',
+            component: Mascot,
+        },
+        {
+            path: '/illustrations',
+            component: Illustrations,
+        },
+        {
+            path: '/loaders-and-animations',
+            component: LoadersAndAnimations,
+        },
+        {
+            path: '/wallpapers',
+            component: Wallpapers,
+        },
+    ]
+};
